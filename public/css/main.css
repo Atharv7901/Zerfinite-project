@@ -1,0 +1,331 @@
+body{
+  background-color: white;
+  color: black ;
+}
+
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+/* .main {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.tag-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .imageContainer {
+      width:1000px;
+      height: 70px;
+      background-image: url("images/infinityscene.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: center;
+      color: white;
+} */
+
+/* .image {
+   position: relative;
+   max-width: 2rem;
+}
+
+h2.main-head {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+   color: white;
+} */
+
+.img-main{
+  background-attachment: fixed;
+}
+
+.img-div{
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  color: white;
+}
+
+.img1-div{
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.navbar.scrolled {
+  background: grey;
+  color: red;
+  transition: background  1000ms;
+}
+
+.card{
+  color: #000000;
+}
+
+.rotate {
+  animation: rotation 4s;
+  height: 18rem;
+  weight: 18rem;
+  z-index: -1;
+  margin-left: 4rem;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#heading {
+  font-family: 'Kaushan Script';
+}
+
+.sub {
+  font-family: 'Acme';
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.intro {
+  margin: 8rem 0;
+}
+
+.intro-text {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.text-heading {
+  text-align: center;
+}
+
+.intro-subtext {
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+.accessible-section {
+  /* background-image: url('../images/infinityscene.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  background-attachment: fixed; */
+  background-color: #084177;
+  padding: 4rem;
+}
+
+.laptop {
+  margin-left: 18rem;
+  height: 25rem;
+  weight: 25rem;
+}
+
+.senten {
+  margin: 3rem 23rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+}
+
+.cat-title {
+  margin: 2rem 28rem 8rem 28rem;
+}
+
+.topics {
+  margin: 6rem 13.5rem 12rem;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  padding: 4rem 5rem;
+}
+
+.footer-head{
+  text-align: center;
+}
+
+.footer .container{
+  margin-top: 4rem;
+}
+
+.mail{
+  border-right: 2px solid white;
+  padding: 2rem 5rem 2rem 13rem;
+}
+
+.contact-info{
+  text-align: right;
+}
+
+.mail-btn{
+  border: 1px solid #084177;
+  margin-top: 2rem;
+}
+
+.fab{
+  margin: 4.5rem 0 3.25rem 3rem;
+}
+
+.fa-facebook:hover{
+  color: #4267B2;
+}
+
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+
+.fa-github:hover{
+  color: grey;
+}
+
+.fa-google-plus:hover{
+  color: #DB4437;
+}
+
+.fa-instagram:hover{
+  color: #9b6954;
+}
+
+.Copyright{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.Copyright a{
+  color: white;
+}
+
+.Copyright a:hover{
+  color: grey;
+}
+
+
+
+
+.left{
+    margin-right: auto;
+}
+h1{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+body{
+     /* background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);   */
+   /* background:linear-gradient(90deg, #141e30 0%,#243b55 100% );; */
+   font-family: 'Poppins';
+
+
+}
+.jumbotron{
+    background-image: url("../images/3264493.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.navbar.scrolled {
+    background: white;
+    transition: background  1000ms;
+ }
+.categories{
+    /* background: #9CECFB;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-body{
+    background-color: RGB(154, 235, 252);
+}
+.mainEducation{
+    text-align: center;
+    background-image: url('https://c0.wallpaperflare.com/preview/948/34/330/education-graduation-knowledge-open.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+.eduContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.mainSports{
+    text-align: center;
+    background-image: url('https://images8.alphacoders.com/476/thumb-1920-476725.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.sportsContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.mainEntertainment{
+    text-align: center;
+    background-image: url('https://www.bu.edu/files/2020/02/Oscar-Predictions-Posters.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.entertainmentContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.eduCategory{
+    margin-top: 2rem;
+}
+.lastButton{
+    margin-bottom: 2rem;
+}
+.sportCategory{
+    margin-top: 2rem;
+}
+.enterCategory{
+    margin-top: 2rem;
+}
+
+.mainEdit{
+    font-family: 'Kaushan Script';
+    color: white;
+}
+.search{
+  font-family: 'Acme';
+}

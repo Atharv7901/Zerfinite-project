@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zerfinite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/best.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/izmir.min.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-expand-lg navbar-dark" style="background-color: black">
+    <a class="navbar-brand hvr-grow sub" href="/">Zerfinite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/afterLogin"> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/logout">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="jumbotron jumbotron-fluid youtube-img-div" style="background-image: url('images/youtube.png'); background-repeat: no-repeat; background-size: cover; height: 700px; background-attachment: fixed">
+  <div class="container sub">
+    <h1 style="font-size: 5rem; margin-top: 6rem">Educational Youtube Channels</h1>
+  </div>
+</div>
+
+
+<div class="text">
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 class="sub" style="margin-bottom: 1rem">Please Select an Option</h5>
+      <form class="filter">
+        <input type="radio" id="school" name="content" value="school" onclick="onclickSchool()"><label for="school" style="margin-left: 0.5rem">School</label><br>
+        <input type="radio" id="college" name="content" value="college" onclick="onclickCollege()"><label for="college" style="margin-left: 0.5rem">College</label><br>
+      </form>
+
+    </div>
+    <div class="col-sm-10 details">
+      <div id="loading-line" class="sub">
+        <h2>No Option Selected.</h2>
+      </div>
+      <div class="info school" id="school-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/learnohub.jpg" alt="LearnoHub" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>LearnoHub</h1>
+            <p>Joined Youtube: 14 July, 2011 (Class 11, 12), 10 July, 2017 (Class 9, 10), 15 April, 2020 (Class 6, 7, 8)</p>
+            <p>LearnoHub (formerly called ExamFear Education) is one of the pioneers on  YouTube for creating educational videos. They started with a motto to  build a free learning
+              platform and have been able to do that over the last 9 years  "Education for All" is what they believe in.</p>
+              <a href="https://www.youtube.com/channel/UCEg3PHVR0vt3azbs_Qk_6cw" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/dronstudy.jpg" alt="DronStudy" class="img-thumbnail" style="margin-top: 2rem">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Dronstudy</h1>
+            <p>Joined Youtube: 22 October, 2013</p>
+            <p>Dronstudy is set up by scientists, IITians and renowned IIT-JEE faculties. Company focuses on making education easier and fun. They use total
+              different style of pedagogy in which viewer feels as if a teacher is sitting beside him and giving him lecture.</p>
+              <a href="https://www.youtube.com/channel/UCPiuJvuyMVFSwcIdBCTpTyQ" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/bodhaguru.jpg" alt="Bodhaguru" class="img-thumbnail" style="margin-top: 1rem">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Bodhaguru</h1>
+            <p>Joined Youtube: 12 December, 2011</p>
+            <p> This channel has more than 2700 animated videos to learn Science and Math from kindergarten to grade 10 in a fun way. They are a small passionate team with
+              a dream to make school learning interesting, relevant and affordable for every child on this planet with the help of technology (animated videos, interactive books
+              and apps).</p>
+              <a href="https://www.youtube.com/user/BodhaguruLearning" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/khan.png" alt="Khan Academy" class="img-thumbnail" style="margin-top: 1rem">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Khan Academy</h1>
+            <p>Joined Youtube: 17 November, 2006</p>
+            <p> Khan Academy is a nonprofit organization with the mission of providing a free, world-class education for anyone, anywhere. Their interactive
+              practice problems, articles, and videos help students succeed in math, biology, chemistry, physics, history, economics, finance, grammar, and many
+              other topics. </p>
+              <a href="https://www.youtube.com/user/khanacademy" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/dm.jpg" alt="Don't Memorise" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Don't Memorise</h1>
+            <p>Joined Youtube: 4 June, 2014</p>
+            <p> The vision of the Don't Memorise team is to help students master life. They want to show you the simplest way to understand a topic through
+              our bite-sized, and engaging video lessons and hope to get you excited about learning and knowing more. </p>
+              <a href="https://www.youtube.com/channel/UCiTjCIT_9EXV1Wp1cY0zaUA" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- College -->
+
+      <div class="info college" id="college-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/neso.jpg" alt="Neso Academy" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Neso Academy</h1>
+            <p>Joined Youtube: 30 July, 2014</p>
+            <p>Neso Academy is an educational organization and they're committed to providing the best learning experience. They believe in “Education for All” and they're
+               redefining the education from the bottom up.</p>
+               <a href="https://www.youtube.com/user/nesoacademy" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/tp.jpg" alt="Tutorialspoint" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Tutorials Point</h1>
+            <p>Joined Youtube: 31 March, 2016</p>
+            <p>Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at
+              ones own pace from the comforts of ones drawing rooms.</p>
+              <a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/ak.jpg" alt="Apni Kaksha" class="img-thumbnail" style="margin-top: 4rem">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Apni Kaksha</h1>
+            <p>Joined Youtube: 6 April, 2018</p>
+            <p>They have created this channel to provide quality education to students who want to learn, grow and do something beautiful with their life. In return
+              they want you to do the same to your juniors and help the youth of this nation to find its right path.</p>
+              <a href="https://www.youtube.com/channel/UCF7BExjT2zH_mmyqOB139Dg" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/jenny.jpg" alt="Jenny Lecture" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Jenny's Lectures</h1>
+            <p>Joined Youtube: 20 January, 2019</p>
+            <p>Jenny’s Lectures is a Free YouTube Channel providing Computer Science/Information Technology/Computer-related tutorials including
+              Important Computer Science Tutorials, NET & JRF Coaching Videos, Algorithms, GATE Coaching Videos.</p>
+              <a href="https://www.youtube.com/channel/UCM-yUTYGmrNvKOCcAl21g3w" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/gate.jpg" alt="Gate Smashers" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Gate Smashers</h1>
+            <p>Joined Youtube: 25 September, 2017</p>
+            <p>Gate Smashers is India's no 1 Free education platform for those aspirants who want to just smash the entrance exam like GATE,UGC NET,KVS,NVS,HTET,CTET
+               etc in Computer Science but they are lagging behind due to lack of proper guidance.</p>
+               <a href="https://www.youtube.com/channel/UCJihyK0A38SZ6SdJirEdIOw" role="button" class="btn btn-dark" style="margin-top: 1rem">Visit Channel</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<section id="contactus">
+  <div class="footer">
+    <h1 class="sub footer-head">Get In Touch</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 contact-icons">
+          <i class="fab fa-facebook fa-2x hvr-pop"></i>
+          <i class="fab fa-twitter fa-2x hvr-pop"></i>
+          <i class="fab fa-github fa-2x hvr-pop"></i>
+          <i class="fab fa-google-plus fa-2x hvr-pop"></i>
+          <i class="fab fa-instagram fa-2x hvr-pop"></i>
+        </div>
+      </div>
+
+    </div>
+    <p class="Copyright">©Copyright <a href="/">Zerfinite 2020</a>. All Rights reserved.</p>
+  </div>
+</section>
+<script type="text/javascript">
+
+
+function onclickSchool(){
+
+  $("#loading-line").hide();
+
+  if($("#school-area").css("display") == "none"){
+    $("#school-area").fadeIn();
+    $("#college-area").fadeOut();
+  } else{
+    $("#school-area").fadeOut();
+    $("#college-area").fadeOut();
+  }
+
+}
+
+function onclickCollege(){
+
+  $("#loading-line").hide();
+
+  if($("#college-area").css("display") == "none"){
+    $("#college-area").fadeIn();
+    $("#school-area").fadeOut();
+  } else{
+    $("#college-area").fadeOut();
+    $("#school-area").fadeOut();
+  }
+
+}
+</script>
+
+</body>
+
+</html>

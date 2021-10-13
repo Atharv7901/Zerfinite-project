@@ -1,0 +1,79 @@
+.mainHeading{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Acme';
+}
+.heading{
+  text-align: center;
+  font-family: 'Acme';
+}
+.jumbotron{
+  background-image: url('../images/equipmentBackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 13rem 5rem;
+  color: black;
+
+}
+body{
+  font-family: 'Poppins';
+}
+.sportsjamImage{
+  width:auto;
+}
+.navbar.scrolled {
+    background: white;
+    transition: background  1000ms;
+ }
+ #contactUs{
+     background-color: #686d76;
+     color:white;
+     padding: 2rem 5rem;
+ }
+ .footer-head{
+     text-align: center;
+ }
+ .footer .container{
+     margin-top: 4rem;
+ }
+ .mail{
+     border-right: 2px solid white;
+     padding: 2rem 5rem 2rem 13rem;
+ }
+ .contact-info{
+     text-align: right;
+ }
+ .mail-btn{
+     border: 1px solid #084177;
+ }
+ .fab{
+     margin: 3.25rem 0 3.25rem 3rem;
+ }
+ .fa-facebook:hover{
+     color: #4267B2 ;
+ }
+ .fa-twitter:hover{
+     color:  #1DA1F2;
+ }
+ .fa-github:hover{
+     color: grey;
+ }
+ .fa-google-plus:hover{
+     color: #DB4437;
+ }
+ .fa-instagram:hover{
+     color: #9b6954;
+ }
+ .Copyright{
+     font-size: 10px;
+     text-align: center;
+     margin-top: 3rem;
+ }
+ .Copyright a{
+     color: white;
+ }
+ .Copyright a:hover{
+     color: grey;
+ }

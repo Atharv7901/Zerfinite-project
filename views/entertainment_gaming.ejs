@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zerfinite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/best.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/izmir.min.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-expand-lg navbar-dark" style="background-color: black">
+    <a class="navbar-brand hvr-grow sub" href="/">Zerfinite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/afterLogin"> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/logout">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="jumbotron jumbotron-fluid movies-img-div" style="background-image: url('images/gaming1.jpg'); background-repeat: no-repeat; background-size: cover; height: 700px; background-attachment: fixed">
+  <div class="container sub">
+    <h1 style="font-size: 6rem; margin-top: 6rem">Gaming</h1>
+  </div>
+</div>
+
+<div class="text">
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 class="sub" style="margin-bottom: 1rem">Please Select an Option</h5>
+      <form class="filter">
+        <input type="radio" id="action" name="content" value="action" onclick="onclickAction()"> <label for="action">Action </label><br>
+        <input type="radio" id="adventure" name="content" value="adventure" onclick="onclickAdventure()"> <label for="adventure">Adventure</label><br>
+        <input type="radio" id="simulation" name="content" value="simulation" onclick="onclickSimulation()"> <label for="simulation">Simulation</label><br>
+        <input type="radio" id="sports" name="content" value="sports" onclick="onclickSports()"> <label for="sports">Sports</label> <br>
+        <input type="radio" id="strategy" name="content" value="strategy" onclick="onclickStrategy()"> <label for="strategy">Strategy</label> <br>
+      </form>
+
+    </div>
+    <div class="col-sm-10 details">
+      <div id="loading-line" class="sub">
+        <h2>No Option Selected.</h2>
+      </div>
+      <div class="info action" id="action-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/cyberpunk.jpg" alt="Cyberpunk" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Cyberpunk 2077</h1>
+            <p>Release Date: 19 November 2020</p>
+            <p>Developer: CD Projekt </p><p>Platforms: PC, PS4, XBO, Google Stadia</p>
+            <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V,
+               a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.</p>
+               <a href="https://www.youtube.com/watch?v=ixl31324UxE&t=69s" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/last.jpg" alt="The Last of Us" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Last of Us Part II</h1>
+            <p>Release Date: 19 June 2020</p>
+            <p>Developer: Naughty Dog </p><p>Platforms: PS4</p>
+            <p>Set five years after The Last of Us (2013), the player controls two characters in a post-apocalyptic United States whose lives intertwine:
+              Ellie, who sets out for revenge after suffering a tragedy, and Abby, a soldier who becomes involved in a conflict with a cult. The game is
+              played from the third-person perspective.</p>
+              <a href="https://www.youtube.com/watch?v=qPNiIeKMHyg" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/doom.jpg" alt="Doom Eternal" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Doom Eternal</h1>
+            <p>Release Date: 20 March 2020</p>
+            <p>Developer: id Software </p><p>Platforms: PC, PS4, XBO, NS, Google Stadia</p>
+            <p>Doom Eternal is a first-person shooter video game developed by id Software and published by Bethesda Softworks.
+              Set some time after the events of the 2016 game, the story follows the Doom Slayer once again, on a mission to end Hell's consumption of
+              Earth and foil the alien Maykrs' plans to exterminate humanity.</p>
+              <a href="https://www.youtube.com/watch?v=VOIm3aVZ5q8" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/outriders.png" alt="Outriders" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Outriders</h1>
+            <p>Release Date: December 2020</p>
+            <p>Developer: People Can Fly </p><p>Platforms: PC, PS4, XBO</p>
+            <p>Outriders is a third-person shooter mixed with elements from role-playing games. The game features a skill tree that allows players to unlock and upgrade their
+              skills. Players can use different weapons such as shotguns and assault rifles to defeat enemies, and firearms can be customized with weapon mods.</p>
+              <a href="https://www.youtube.com/watch?v=ED4o1WJFmDY" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/cod.png" alt="Call of Duty" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Call of Duty: Black Ops Cold War</h1>
+            <p>Release Date: 13 November 2020</p>
+            <p>Developer: Raven Software </p><p>Platforms: PC, PS4, PS5, XBO, XSX</p>
+            <p>Call of Duty: Black Ops Cold War is an upcoming first-person shooter video game developed by Treyarch and Raven Software and published by Activision. It is the
+              sixth installment of the Black Ops series, and the seventeenth installment in the overall Call of Duty series.</p>
+              <a href="https://www.youtube.com/watch?v=aTS9n_m7TW0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <!-- Adventure -->
+
+      <div class="info adventure" id="adventure-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/outer.jpeg" alt="The Outer Worlds" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Outer Worlds: Peril on Gorgon</h1>
+            <p>Release Date: 9 September 2020</p>
+            <p>Developer: Obsidian Entertainment </p><p>Platforms: PC, PS4, XBO, NS</p>
+            <p>Peril on Gorgon for The Outer Worlds is the first DLC of the game. The Peril on Gorgon DLC introduces a brand new planet to explore called Gorgon, where you'll
+              meet new NPCs, discover state-of-the-art Weapons and Armor, as well as partaking in the latest Quests where various secrets are waiting to discover.</p>
+              <a href="https://www.youtube.com/watch?v=BaRNBDZxe0I" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/senua.jpg" alt="Senua's Saga" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Senua's Saga: Hellblade II</h1>
+            <p>Release Date: November 2020</p>
+            <p>Developer: Ninja Theory </p><p>Platforms: XSX, PC</p>
+            <p>In Senua's Sacrifice, Senua travels through Helheim (the Underworld of Norse mythology) as part of a journey to rescue the soul of her dead lover, Dillion,
+              from the goddess Hela. During this adventure, she struggles with her own hallucinations, and fends off the undead soldiers who seek to bring her down.</p>
+              <a href="https://www.youtube.com/watch?v=2TR0gaG01do" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/half.jpg" alt="Half Life" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Half-Life: Alyx</h1>
+            <p>Release Date: 23 March 2020</p>
+            <p>Developer: Valve Corporation </p><p>Platforms: PC</p>
+            <p>Half-Life: Alyx is a 2020 virtual reality (VR) first-person shooter developed and published by Valve. Players use VR to interact with the environment and fight enemies,
+              using "gravity gloves" to manipulate objects, similarly to the gravity gun from Half-Life 2.</p>
+              <a href="https://www.youtube.com/watch?v=O2W0N3uKXmo" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/twin.jpg" alt="Twin Mirror" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Twin Mirror</h1>
+            <p>Release Date: 1 December 2020</p>
+            <p>Developer: Dontnod Entertainment </p><p>Platforms: PC, PS4, XBO</p>
+            <p>Twin Mirror is an adventure game played from a third-person view. Players control the investigative journalist Sam, who has returned to his hometown of Basswood, West Virginia.
+               Players navigate between the real world and Sam's "Mind Palace" to discover clues.</p>
+               <a href="https://www.youtube.com/watch?v=Pxyp9jM9Xj0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/creed.png" alt="Assassin's Creed" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Assassin's Creed Valhalla</h1>
+            <p>Release Date: 10 November 2020</p>
+            <p>Developer: Ubisoft Montreal </p><p>Platforms: PC, PS4, XBO, PS5, XSX</p>
+            <p>Assassin's Creed Valhalla is an open world action-adventure game, structured around several main story quests and numerous optional side missions. The player takes on the
+              role of Eivor, a Viking raider, as they lead their fellow Vikings against the Anglo-Saxon kingdoms.</p>
+              <a href="https://www.youtube.com/watch?v=ssrNcwxALS4" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <!-- Simulation -->
+
+      <div class="info simulation" id="simulation-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/cities.jpg" alt="Cities" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Cities: Skylines</h1>
+            <p>Release Date: 10 March 2015</p>
+            <p>Developer: Colossal Order</p><p>Platforms: PC, PS4, XBO, NS</p>
+            <p>Cities: Skylines is a city-building game developed by Colossal Order and published by Paradox Interactive. The game is a single-player open-ended city-building simulation.
+              Players engage in urban planning by controlling zoning, road placement, taxation, public services, and public transportation of an area.</p>
+              <a href="https://www.youtube.com/watch?v=CpWe03NhXKs" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/footballm.jpg" alt="Football Manager" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Football Manager 2020</h1>
+            <p>Release Date: 31 October 2019</p>
+            <p>Developer: Sports Interactive</p><p>Platforms: PC, NS, Android, iOS, Google Stadia</p>
+            <p>Football Manager 2020 is a 2019 football-management simulation video game developed by Sports Interactive.Every decision counts in Football Manager 2020 with new
+              features and polished game mechanics rewarding planning and progression like never before, empowering managers to develop and refine both your club's and your own
+              unique identity.</p>
+              <a href="https://www.youtube.com/watch?v=gE5eNnJ9ZN0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/pc.jpg" alt="PC Building Simulator" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>PC Building Simulator</h1>
+            <p>Release Date: 27 March 2018</p>
+            <p>Developer: The Irregular Corporation</p><p>Platforms: PC, PS4, XBO, NS, SteamOS</p>
+            <p>PC Building Simulator aims to teach even the most novice PC user how their machine is put together with step-by-step instructions explaining the order parts should be
+              assembled and providing useful information on what each part is and its function.</p>
+              <a href="https://www.youtube.com/watch?v=rq9IAJ7YulQ" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/two.jpg" alt="Two Point" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Two Point Hospital</h1>
+            <p>Release Date: 30 August 2018</p>
+            <p>Developer: Two Point Studios</p><p>Platforms: PC, PS4, XBO, NS</p>
+            <p> A spiritual successor to Bullfrog Productions' 1997 game Theme Hospital, players are tasked with constructing and operating an empire of hospitals in the fictional
+              Two Point County, with the goal of curing patients of fictitious, comical ailments.</p>
+              <a href="https://www.youtube.com/watch?v=SjrcU1gwkjc" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/planet.jpg" alt="Planet Coaster" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Planet Coaster</h1>
+            <p>Release Date: 17 November 2016</p>
+            <p>Developer: Frontier Developments plc</p><p>Platforms: PC, PS4, PS5, XBO, XSX</p>
+            <p>Planet Coaster is a construction and management simulation video game. Similar to its spiritual predecessor, the game allows players to build different theme park rides and
+              roller-coasters. These player-created attractions can be shared through a mechanic called "global village".</p>
+              <a href="https://www.youtube.com/watch?v=91Kli1Uwk9g" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- Sports -->
+
+      <div class="info sports" id="sports-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/madden.png" alt="Madden NFL" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Madden NFL 20</h1>
+            <p>Release Date: 14 June 2019</p>
+            <p>Developer: EA Tiburon</p><p>Platforms: PC, PS4, XBO</p>
+            <p>Madden NFL 20 features a new "personalized career campaign" known as QB 1, following the journey of a player-created college quarterback from their participation in
+              the College Football Playoff, to being drafted by an NFL team.</p>
+              <a href="https://www.youtube.com/watch?v=oHOudL5d14M" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/pes.jpg" alt="PES" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>eFootball PES 2020</h1>
+            <p>Release Date: 30 July 2019</p>
+            <p>Developer: PES Productions</p><p>Platforms: PC, PS4, XBO, Android, iOS</p>
+            <p>The new game features a name change with the addition of 'eFootball' within the title, symbolizing a push in the online gaming space with a focus on eFootball Pro tournaments.
+               Lionel Messi returns as the cover star of the standard edition, since his last appearance on the cover of Pro Evolution Soccer 2011, alongside Pro Evolution Soccer ambassadors
+                Serge Gnabry, Miralem Pjanić and Scott McTominay, each representing one of the game's partner clubs.</p>
+                <a href="https://www.youtube.com/watch?v=V-mDyfoYYc8" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/nhl.jpg" alt="NHL 20" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>NHL 20</h1>
+            <p>Release Date: 26 July 2019</p>
+            <p>Developer: EA Vancouver</p><p>Platforms: PS4, XBO</p>
+            <p>EA SPORTS™ NHL 20 introduces cutting-edge gameplay innovation to showcase your skills, more customization to unlock your style, and new modes to compete with friends.
+              NHL 20 introduces the next major innovation in RPM Tech-powered gameplay with Superstar Signature Shots.</p>
+              <a href="https://www.youtube.com/watch?v=XFeWWVdYhmc" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/ufc.jpg" alt="UFC 3" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>UFC 3</h1>
+            <p>Release Date: 2 February 2018</p>
+            <p>Developer: EA Vancouver</p><p>Platforms: PS4, XBO</p>
+            <p>EA SPORTS UFC 3 is the most revolutionary fighting game on the planet, connecting you to the real-world UFC all year round. Master the promotion and performance of
+               becoming a professional fighter, inside and outside the Octagon. Build the ultimate lineup of authentic champion fighters.</p>
+               <a href="https://www.youtube.com/watch?v=Pgh7dGxVKWw" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/f1.jpeg" alt="F1 2019" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>F1 2019</h1>
+            <p>Release Date: 25 June 2019</p>
+            <p>Developer: Codemasters</p><p>Platforms: PC, PS4, XBO</p>
+            <p>F1 2019, the official videogame, challenges you to defeat your rivals in the most ambitious F1 game in Codemasters' history. F1 2019 features all the official teams,
+              drivers and all 21 circuits from the season. This year sees the inclusion of F2 with players able to compete in the 2018 season.</p>
+              <a href="https://www.youtube.com/watch?v=iz7AMaJarQ8" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- Strategy -->
+
+
+
+
+      <div class="info strategy" id="strategy-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/iron.jpg" alt="Iron Harvest" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Iron Harvest</h1>
+            <p>Release Date: 9 January 2020</p>
+            <p>Developer: King Art Games</p><p>Platforms: PC, PS4, XBO</p>
+            <p>The story is focused on the conflict between three nations in Central and Eastern Europe — Polania, Rusviet and Saxony (based respectively on Poland, Soviet Union, and Germany)
+              that occurs sometime in the 1920s, in the aftermath of World War I.</p>
+              <a href="https://www.youtube.com/watch?v=mruZvlOucbc" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/crusador.jpg" alt="Crusader" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Crusader Kings III</h1>
+            <p>Release Date: 1 September 2020</p>
+            <p>Developer: Paradox Development Studio</p><p>Platforms: PC</p>
+            <p>Crusader Kings III is the heir to a long legacy of historical grand strategy experiences and arrives with a host of new ways to ensure the success of your royal house.
+              Choose a royal or noble house from a number of realms on a map that stretches from Iceland to India, from the Arctic Circle to Central Africa.</p>
+              <a href="https://www.youtube.com/watch?v=xjn66Cl3pMA" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/gears.png" alt="Gears Tactics" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Gears Tactics</h1>
+            <p>Release Date: 28 April 2020</p>
+            <p>Developer: Splash Damage</p><p>Platforms: PC, XBO, XSX</p>
+            <p>Gears Tactics is set 12 years before the first Gears of War. Cities on the planet Sera are beginning to fall to the monstrous threat rising from underground –
+              the Locust Horde. With the government in disarray, a squad of survivors emerge as humanity's last hope.</p>
+              <a href="https://www.youtube.com/watch?v=M5eYR5Pu4Io" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/desparados.jpg" alt="Desparados" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Desperados III</h1>
+            <p>Release Date: 16 June 2020</p>
+            <p>Developer: Mimimi Games</p><p>Platforms: PC, PS4, XBO</p>
+            <p>The story follows bounty hunter John Cooper as he pursues Frank, a notorious bandit leader responsible for killing John's father, James Cooper. Along the way,
+              Cooper meets Doctor McCoy, who was hired by the DeVitt Company, a wealthy corporation, to defend the train Cooper was taking on his way to the town of Flagstone.</p>
+              <a href="https://www.youtube.com/watch?v=iZFsR_mpWJA" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/total.jpg" alt="Total War Saga" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>A Total War Saga: Troy</h1>
+            <p>Release Date: 13 August 2020</p>
+            <p>Developer: Creative Assembly</p><p>Platforms: PC</p>
+            <p>Combining Total War's unique blend of grand, turn-based empire management and spectacular real-time battles, TROY explores this epic conflict from both the Greek
+              and Trojan perspectives – peeling back the layers of myth and legend to reveal the realities that may have inspired them.</p>
+              <a href="https://www.youtube.com/watch?v=15GmllHlnLQ" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+</div>
+
+<section id="contactus">
+  <div class="footer">
+    <h1 class="sub footer-head">Get In Touch</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 contact-icons">
+          <i class="fab fa-facebook fa-2x hvr-pop"></i>
+          <i class="fab fa-twitter fa-2x hvr-pop"></i>
+          <i class="fab fa-github fa-2x hvr-pop"></i>
+          <i class="fab fa-google-plus fa-2x hvr-pop"></i>
+          <i class="fab fa-instagram fa-2x hvr-pop"></i>
+        </div>
+      </div>
+
+    </div>
+    <p class="Copyright">©Copyright <a href="/">Zerfinite 2020</a>. All Rights reserved.</p>
+  </div>
+</section>
+<script type="text/javascript">
+
+function onclickAction(){
+
+  $("#loading-line").hide();
+
+  if($("#action-area").css("display") == "none"){
+    $("#action-area").fadeIn();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  } else{
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  }
+
+}
+
+function onclickAdventure(){
+
+  $("#loading-line").hide();
+
+  if($("#adventure-area").css("display") == "none"){
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeIn();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  } else{
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  }
+
+}
+
+function onclickSimulation(){
+
+  $("#loading-line").hide();
+
+  if($("#simulation-area").css("display") == "none"){
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeIn();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  } else{
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  }
+
+}
+
+function onclickSports(){
+
+  $("#loading-line").hide();
+
+  if($("#sports-area").css("display") == "none"){
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeIn();
+    $("#strategy-area").fadeOut();
+  } else{
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  }
+
+}
+
+function onclickStrategy(){
+
+  $("#loading-line").hide();
+
+  if($("#strategy-area").css("display") == "none"){
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeIn();
+  } else{
+    $("#action-area").fadeOut();
+    $("#adventure-area").fadeOut();
+    $("#simulation-area").fadeOut();
+    $("#sports-area").fadeOut();
+    $("#strategy-area").fadeOut();
+  }
+
+}
+</script>
+
+</body>
+
+</html>

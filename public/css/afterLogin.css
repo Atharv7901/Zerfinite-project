@@ -1,0 +1,140 @@
+.left{
+    margin-right: auto;
+}
+h1{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+body{
+     /* background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);   */
+   /* background:linear-gradient(90deg, #141e30 0%,#243b55 100% );; */
+   font-family: 'Poppins';
+
+
+}
+.jumbotron{
+    background-image: url("../images/3264493.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.navbar.scrolled {
+    background: white;
+    transition: background  1000ms;
+ }
+.categories{
+    /* background: #9CECFB;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-body{
+    background-color: RGB(154, 235, 252);
+}
+.mainEducation{
+    text-align: center;
+    background-image: url('https://c0.wallpaperflare.com/preview/948/34/330/education-graduation-knowledge-open.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+.eduContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.mainSports{
+    text-align: center;
+    background-image: url('https://images8.alphacoders.com/476/thumb-1920-476725.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.sportsContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.mainEntertainment{
+    text-align: center;
+    background-image: url('https://www.bu.edu/files/2020/02/Oscar-Predictions-Posters.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.entertainmentContent{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.eduCategory{
+    margin-top: 2rem;
+}
+.lastButton{
+    margin-bottom: 2rem;
+}
+.sportCategory{
+    margin-top: 2rem;
+}
+.enterCategory{
+    margin-top: 2rem;
+}
+#contactUs{
+    background-color: black;
+    color:white;
+}
+.footer-head{
+    text-align: center;
+}
+.footer .container{
+    margin-top: 4rem;
+}
+/* .mail{
+    border-right: 2px solid white;
+    padding: 2rem 5rem 2rem 13rem;
+} */
+.contact-info{
+    text-align: right;
+}
+.mail-btn{
+    border: 1px solid #084177;
+}
+/* .fab{
+    margin: 3.25rem 0 3.25rem 3rem;
+} */
+.fa-facebook:hover{
+    color: #4267B2 ;
+}
+.fa-twitter:hover{
+    color:  #1DA1F2;
+}
+.fa-github:hover{
+    color: grey;
+}
+.fa-google-plus:hover{
+    color: #DB4437;
+}
+.fa-instagram:hover{
+    color: #9b6954;
+}
+.Copyright{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.Copyright a{
+    color: white;
+}
+.Copyright a:hover{
+    color: grey;
+}
+.mainEdit{
+    font-family: 'Kaushan Script';
+    color: white;
+}
+.search{
+  font-family: 'Acme';
+}

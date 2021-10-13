@@ -1,0 +1,124 @@
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+.sub {
+  font-family: 'Acme';
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.movies-img-div {
+  text-align: center;
+  color: white;
+  padding-top: 13rem;
+  padding-bottom: 10rem;
+}
+
+.youtube-img-div {
+  background: #e52d27;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b31217, #e52d27);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+  padding-top: 14rem;
+}
+
+
+
+
+
+
+
+
+/*  Movies Page  */
+
+.text{
+  margin: 5rem;
+}
+
+.details{
+  padding-left: 2rem;
+}
+
+.mov-details{
+  margin-top: 5rem;
+}
+
+.mov-img{
+}
+
+.mov-content{
+  margin-top: 1rem;
+  padding-left: 4%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.fab {
+  margin: 3rem 1rem 3.25rem 2rem;
+}
+
+.fa-facebook:hover {
+  color: #4267B2;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-github:hover {
+  color: grey;
+}
+
+.fa-google-plus:hover {
+  color: #DB4437;
+}
+
+.fa-instagram:hover {
+  color: #9b6954;
+}
+
+.Copyright {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.Copyright a {
+  color: white;
+}
+
+.Copyright a:hover {
+  color: grey;
+}

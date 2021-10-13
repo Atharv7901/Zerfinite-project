@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zerfinite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/best.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/izmir.min.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-expand-lg navbar-dark" style="background-color: black">
+    <a class="navbar-brand hvr-grow sub" href="/">Zerfinite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/afterLogin"> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-grow sub" href="/logout">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="jumbotron jumbotron-fluid movies-img-div" style="background-image: url('images/movie_bg_1.jpg'); background-repeat: no-repeat; background-size: cover; height: 700px; background-attachment: fixed">
+  <div class="container sub">
+    <h1 style="font-size: 5rem;  margin-top: 6rem" id="head">Movies and Web Series</h1>
+  </div>
+</div>
+
+<div class="text">
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 class="sub" style="margin-bottom: 1rem">Please Select an Option</h5>
+      <form class="filter">
+        <input type="radio" id="h_movies" name="content" value="hmovies" onclick="onclickHMovies()"> <label for="h_movies">Hollywood Movies</label><br>
+        <input type="radio" id="b_movies" name="content" value="bmovies" onclick="onclickBMovies()"> <label for="b_movies">Bollywood Movies</label><br>
+        <input type="radio" id="h_web_series" name="content" value="hwebseries" onclick="onclickHWebSeries()"> <label for="h_web_series">Hollywood Web Series</label><br>
+        <input type="radio" id="b_web_series" name="content" value="bwebseries" onclick="onclickBWebSeries()"> <label for="b_web_series">Bollywood Web Series</label> <br>
+      </form>
+
+    </div>
+    <div class="col-sm-10 details">
+      <div id="loading-line" class="sub">
+        <h2>No Option Selected.</h2>
+      </div>
+      <div class="info hollwood_movies" id="hmovie-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/parasite.jpg" alt="Parasite" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Parasite</h1>
+            <p>Release Date: 31 January 2020</p>
+            <p>Director: Bong Joon-ho; Language: Korean</p>
+            <p>Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.
+              The Parks are a wealthy family who for four years have lived in their modernistic house designed by and the former residence of famed architect
+              Namgoong.</p>
+              <a href="https://www.youtube.com/watch?v=5xH0HfJHsaY" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/1917.jpg" alt="1917" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>1917</h1>
+            <p>Release Date: 17 January 2020</p>
+            <p>Director: Sam Mendes; Language: English</p>
+            <p>During World War I, two British soldiers -- Lance Cpl. Schofield and Lance Cpl. Blake -- receive seemingly impossible orders. In a race against
+              time, they must cross over into enemy territory to deliver a message that could potentially save 1,600 of their fellow comrades -- including
+              Blake's own brother.</p>
+              <a href="https://www.youtube.com/watch?v=YqNYrYUiMfg" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/outpost.jpg" alt="The Outpost" height="380px" width="260px" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Outpost</h1>
+            <p>Release Date: 24 June 2020</p>
+            <p>Director: Rod Lurie; Language: English</p>
+            <p>A small unit of U.S. soldiers, alone at the remote Combat Outpost Keating, located deep in the valley of three mountains in Afghanistan, battles
+              an overwhelming force of Taliban fighters in a coordinated attack. The Battle of Kamdesh became the bloodiest American engagement of the Afghanistan
+               War in 2009, and Bravo Troop 3-61 CAV became one of the most decorated units of the 19-year conflict.</p>
+               <a href="https://www.youtube.com/watch?v=Kp9JghhGPao" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/tenet.jpg" alt="Tenet" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Tenet</h1>
+            <p>Release Date: 12 August 2020</p>
+            <p>Director: Christopher Nolan; Language: English</p>
+            <p>A symphony performance in Kiev is attacked and the unnamed CIA agent, dreadfully referred to in the film as The Protagonist, is sent undercover
+              to retrieve a colleague and a strange artifact. The Protagonist is captured and tortured, unwilling to disclose any information.</p>
+              <a href="https://www.youtube.com/watch?v=LdOM0x0XDMo" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/onward.jpg" alt="Onward" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Onward</h1>
+            <p>Release Date: 29 February 2020</p>
+            <p>Director: Dan Scanlon; Language: English</p>
+            <p>Teenage elf brothers Ian and Barley embark on a magical quest to spend one more day with their late father. Like any good adventure, their
+              journey is filled with cryptic maps, impossible obstacles and unimaginable discoveries. But when dear Mom finds out her sons are missing, she
+              teams up with the legendary manticore to bring her beloved boys back home.</p>
+              <a href="https://www.youtube.com/watch?v=gn5QmllRCn4" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/invisibleman.jpg" alt="The Invisible Man" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Invisible Man</h1>
+            <p>Release Date: 28 February 2020</p>
+            <p>Director: Leigh Whannell; Language: English</p>
+            <p>After staging his own suicide, a crazed scientist uses his power to become invisible to stalk and terrorize his ex-girlfriend. When the
+              police refuse to believe her story, she decides to take matters into her own hands and fight back.</p>
+              <a href="https://www.youtube.com/watch?v=Pso0Aj_cTh0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/birdsofprey.png" alt="Birds Of Prey" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Birds of Prey</h1>
+            <p>Release Date: 29 January 2020</p>
+            <p>Director: Cathy Yan; Language: English</p>
+            <p>The film follows Harley Quinn, after breaking up with the Joker, joining forces with Helena Bertinelli, Dinah Lance, and Renee Montoya to save
+              Cassandra Cain from Gotham City crime lord Roman Sionis, forming the Birds of Prey altogether.</p>
+              <a href="https://www.youtube.com/watch?v=kGM4uYZzfu0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/littlewomen.jpg" alt="Little Women" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Little Women</h1>
+            <p>Release Date: 7 December 2019</p>
+            <p>Director: Greta Gerwig; Language: English</p>
+            <p>With their father fighting in the American Civil War, sisters Jo, Meg, Amy and Beth are at home with their mother, a very outspoken women for
+               her time. The story tells of how the sisters grow up, find love and find their place in the world. Four sisters and their mother at home. Their
+               father is fighting in the war.</p>
+               <a href="https://www.youtube.com/watch?v=AST2-4db4ic" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/gentlemen.jpg" alt="The Gentlemen" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Gentlemen</h1>
+            <p>Release Date: 1 January 2020</p>
+            <p>Director: Guy Ritchie; Language: English</p>
+            <p>Mickey Pearson is an American expatriate who became rich by building a highly profitable marijuana empire in London. When word gets out that
+              he's looking to cash out of the business, it soon triggers an array of plots and schemes -- including bribery and blackmail -- from shady
+              characters who want to steal his domain.</p>
+              <a href="https://www.youtube.com/watch?v=Ify9S7hj480" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/jojo.jpg" alt="Jojo Rabbit" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Jojo Rabbit</h1>
+            <p>Release Date: 31 January 2020</p>
+            <p>Director: Taika Waititi; Language: English</p>
+            <p>A World War II satire that follows a lonely German boy named Jojo (Roman Griffin Davis) whose world view is turned upside down when he
+               discovers his single mother (Scarlett Johansson) is hiding a young Jewish girl (Thomasin McKenzie) in their attic.</p>
+               <a href="https://www.youtube.com/watch?v=tL4McUzXfFI" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- Bollywood Movies -->
+
+
+      <div class="info bollywood_movies" id="bmovie-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/thappad.jpg" alt="Thappad" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Thappad</h1>
+            <p>Release Date: 28 February 2020</p>
+            <p>Director: Anubhav Sinha; Language: Hindi</p>
+            <p>Amrita, a young woman, leads a content life with her husband, Vikram. However, their happiness is shattered when he slaps her at
+              an office party causing her to file for a divorce.</p>
+              <a href="https://www.youtube.com/watch?v=jBw_Eta0HDM" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/gunjan.jpg" alt="Gunjan Saxena" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Gunjan Saxena: The Kargil Girl</h1>
+            <p>Release Date: 24 April 2020</p>
+            <p>Director: Sharan Sharma; Language: Hindi</p>
+            <p>Gunjan Saxena's dream since childhood is to be a pilot she decides to quit her education after 10th to train as pilot. Gunjan then heads
+              for further training towards the air force camp where she has to face humiliation from Senior male officers for being the only female in
+              the camp.</p>
+              <a href="https://www.youtube.com/watch?v=rtGIq9Xjnrw" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/kaamyaab.jpg" alt="Kaamyaab" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Kaamyaab</h1>
+            <p>Release Date: 6 March 2020</p>
+            <p>Director: Hardik Mehta; Language: Hindi</p>
+            <p>Kaamyaab is the journey of Sudheer, a washed up side actor from the heyday of Bollywood. Years after his retirement, he realises that
+               he ‘retired’ on the verge of accomplishing a unique record. He decides to come out of his retirement to complete the round figure of 500
+               and get that one substantial role for which he will be remembered forever.</p>
+               <a href="https://www.youtube.com/watch?v=8KwQkxW1bVc" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/panga.jpg" alt="Panga" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Panga</h1>
+            <p>Release Date: 24 January 2020</p>
+            <p>Director: Ashwiny Iyer Tiwari; Language: Hindi</p>
+            <p>Rooted in the subculture of societal facts, Panga is an emotional roller coaster tale of a middle-class Indian woman, where a forgotten
+              Kabaddi world champion catalyzes an inner desire to give a new meaning to her existing role as a wife and mother and takes an ingenious
+              decision to come back to the sport despite the challenges of age stereotype</p>
+              <a href="https://www.youtube.com/watch?v=QDP6tCC8zTo" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/tanhaji.jpg" alt="Tanhaji" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Tanhaji: The Unsung Warrior</h1>
+            <p>Release Date: 10 January 2020</p>
+            <p>Director: Om Raut; Language: Hindi</p>
+            <p>Chhatrapati Shivaji's right-hand man, braveheart Subhedar Tanhaji Malusare, pits his sharp acumen against the brawn of ruthless and
+              hedonistic Mughal chieftain Udaybhan Singh Rathore to recapture Kondhana for the Maratha empire.</p>
+              <a href="https://www.youtube.com/watch?v=cffAGIYTEHU" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/dolly.jpg" alt="Dolly Aur Kitty" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Dolly Kitty Aur Woh Chamakte Sitare</h1>
+            <p>Release Date: 4 October 2020</p>
+            <p>Director: Alankrita Shrivastava; Language: Hindi</p>
+            <p>In Noida, Radha "Dolly" Yadav is part of a middle-class family with her husband Amit and two sons. While they are financially stable,
+              they struggle to pay the installments for a new luxury apartment they are in the process of purchasing.</p>
+              <a href="https://www.youtube.com/watch?v=as3YLG5DmL0" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/shakuntala.jpg" alt="Shakuntala Devi" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Shakuntala Devi</h1>
+            <p>Release Date: 31 July 2020</p>
+            <p>Director: Anu Menon; Language: Hindi</p>
+            <p>In 2001, Anupama Banerjee arrives in London with her husband Ajay, and reveals that she is suing her mother, Shakuntala Devi.
+              The film shifts to Shakuntala Devi's childhood in Bangalore in the 1930s, where her family discovers her incredible talent for quickly
+              solving complex mathematical problems in her head.</p>
+              <a href="https://www.youtube.com/watch?v=8HA1HRufYso" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/dil.jpg" alt="Dil Bechara" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Dil Bechara</h1>
+            <p>Release Date: 16 October 2020</p>
+            <p>Director: Mukesh Chhabra; Language: Hindi</p>
+            <p>Kizie and Manny are poles apart in personality and their battle against cancer is the only common thread binding them.
+              Love slowly wraps them in its embrace, but little do they know what fate has in store for them.</p>
+              <a href="https://www.youtube.com/watch?v=GODAlxW5Pes&t=31s" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/gulabo.jpg" alt="Gulabo Sitabo" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Gulabo Sitabo</h1>
+            <p>Release Date: 17 April 2020</p>
+            <p>Director: Shoojit Sircar; Language: Hindi</p>
+            <p>The film follows the feud between Mirza, who is the husband of the owner of Fatima Mahal Haveli and Baankey, who is his long term tenant.
+              The petty bickering between the characters continues, until one day when Baankey accidentally knocks down a wall of Haveli's toilets.</p>
+              <a href="https://www.youtube.com/watch?v=o0qeQ_yHqtA" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/angrezi.jpg" alt="Angrezi Medium" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Angrezi Medium</h1>
+            <p>Release Date: 13 March 2020</p>
+            <p>Director: Homi Adajania; Language: Hindi</p>
+            <p>An unassuming mithai shop owner and single father is set to fulfil his daughter's dream to study in London. However, certain misadventures
+              lead him and his family on a new quest, which renews their relationships and bonds.</p>
+              <a href="https://www.youtube.com/watch?v=rzlfeocUVhI" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- Hollywood Webseries -->
+
+      <div class="info hollywood_web_series" id="hws-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/god.jpg" alt="American Gods" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>American Gods</h1>
+            <p>First Episode Date: 30 April 2017</p>
+            <p>Director: Ian McShane; Language: English</p>
+            <p>No.of Seasons: 2; No. of Episodes: 16</p>
+            <p>Only days before his scheduled release from prison, Shadow Moon is told his wife has been killed in a car accident, and he is released
+              early to attend the funeral. A series of events delays his trip home, during which time he meets the mysterious Mr. Wednesday.</p>
+              <a href="https://www.youtube.com/watch?v=z6HLeNl8DOs" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/boys.jpeg" alt="The Boys" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Boys</h1>
+            <p>First Episode Date: 26 July 2019</p>
+            <p>Director: Stefan Schwartz; Language: English</p>
+            <p>No.of Seasons: 2; No. of Episodes: 16</p>
+            <p>The Boys is set in a universe where superpowered individuals are recognized as heroes by the general public and work for the powerful
+              corporation Vought International, which markets and monetizes them. Outside of their heroic personas, most are arrogant and corrupt.</p>
+              <a href="https://www.youtube.com/watch?v=06rueu_fh30" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/good.jpg" alt="Good Omens" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Good Omens</h1>
+            <p>First Episode Date: 31 May 2019</p>
+            <p>Director: Douglas Mackinnon; Language: English</p>
+            <p>No.of Seasons: 1; No. of Episodes: 6</p>
+            <p>Set in 2018, the series follows the demon Crowley (David Tennant) and the angel Aziraphale (Michael Sheen), longtime acquaintances who,
+              having grown accustomed to life on Earth as representatives of Heaven and Hell, seek to prevent the coming of the Antichrist and with it
+              Armageddon, the final battle between Heaven and Hell</p>
+              <a href="https://www.youtube.com/watch?v=06rueu_fh30" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/bb.jpg" alt="Breaking Bad" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Breaking Bad</h1>
+            <p>First Episode Date: 20 January 2008</p>
+            <p>Director: Rian Johnson; Language: English</p>
+            <p>No.of Seasons: 5; No. of Episodes: 62</p>
+            <p>Set in Albuquerque, New Mexico, between 2008 and 2010, Breaking Bad follows Walter White, a meek high school chemistry teacher who
+              transforms into a ruthless player in the local methamphetamine drug trade, driven by a desire to provide for his family after being diagnosed
+              with terminal lung cancer.</p>
+              <a href="https://www.youtube.com/watch?v=HhesaQXLuRY" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/dark.jpg" alt="Dark" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Dark</h1>
+            <p>First Episode Date: 1 December 2017</p>
+            <p>Director: Baran bo Odar; Language: English</p>
+            <p>No.of Seasons: 3; No. of Episodes: 26</p>
+            <p>"Dark" is a series about factions of people, most of whom are related to one another through generations of small-town links, fighting for
+              control of time travel. In the town of Winden, Germany, there are several families who are all interconnected thanks to a 33-year-cycle of
+              trauma.</p>
+              <a href="https://www.youtube.com/watch?v=rrwycJ08PSA" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/bojack.jpg" alt="BoJack Horsemen" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>BoJack Horsemen</h1>
+            <p>First Episode Date: 22 August 2014</p>
+            <p>Director: Raphael Bob-Waksberg; Language: English</p>
+            <p>No.of Seasons: 6; No. of Episodes: 77</p>
+            <p>BoJack is a 50-year-old former sitcom star trying to write a memoir. After his publisher insists he hire a ghostwriter, he contacts Diane Nguyen.
+               Meanwhile, his relationship with his agent, Princess Carolyn, ends, and his freeloading roommate, Todd, convinces him to throw a party to settle
+               his own debts.</p>
+               <a href="https://www.youtube.com/watch?v=i1eJMig5Ik4" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/stranger.jpg" alt="Stranger Things" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Stranger Things</h1>
+            <p>First Episode Date: 15 July 2016</p>
+            <p>Director: Shawn Levy; Language: English</p>
+            <p>No.of Seasons: 3; No. of Episodes: 25</p>
+            <p>Set in the 1980s in the fictional town of Hawkins, Indiana, the first season focuses on the investigation into the disappearance of a young boy
+              amid supernatural events occurring around the town, including the appearance of a girl with psychokinetic abilities.</p>
+              <a href="https://www.youtube.com/watch?v=b9EkMc79ZSU&t=1s" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/ozark.jpg" alt="Ozark" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Ozark</h1>
+            <p>First Episode Date: 21 July 2017</p>
+            <p>Director: Jason Bateman; Language: English</p>
+            <p>No.of Seasons: 3; No. of Episodes: 30</p>
+            <p>After a money laundering scheme for a Mexican drug cartel goes wrong, financial advisor Martin "Marty" Byrde proposes to make
+              amends by offering to set up a bigger laundering operation in the Lake of the Ozarks region of central Missouri.</p>
+              <a href="https://www.youtube.com/watch?v=5hAXVqrljbs" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/peaky.jpg" alt="Peaky Blinders" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Peaky Blinders</h1>
+            <p>First Episode Date: 12 September 2013</p>
+            <p>Director: Steven Knight; Language: English</p>
+            <p>No.of Seasons: 5; No. of Episodes: 30</p>
+            <p>Peaky Blinders is a gangster family of Irish and Roma origin epic set in Birmingham, England, in 1919, several months after the end of the
+              First World War in November 1918. The story centres on the Peaky Blinders gang and their ambitious and highly cunning boss Tommy Shelby
+              (Cillian Murphy).</p>
+              <a href="https://www.youtube.com/watch?v=oVzVdvGIC7U&t=7s" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/narcos.jpg" alt="Narcos" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Narcos</h1>
+            <p>First Episode Date: 28 August 2015</p>
+            <p>Director: Jose Padilha; Language: English</p>
+            <p>No.of Seasons: 3; No. of Episodes: 30</p>
+            <p>The first season of Narcos, an American crime thriller drama web television series produced and created by Chris Brancato, Carlo Bernard,
+              and Doug Miro, follows the story of notorious drug kingpin Pablo Escobar, who became a billionaire through the production and distribution
+               of cocaine, while also focusing on Escobar's interactions with other drug lords, DEA agents, and various opposition entities</p>
+               <a href="https://www.youtube.com/watch?v=xl8zdCY-abw" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- Bollywood Webseries -->
+
+      <div class="info bollywood_web_series" id="bws-area" style="display: none">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mov-img">
+            <img src="images/paatal.jpg" alt="Paatal Lok" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Paatal Lok</h1>
+            <p>First Episode Date: 15 May 2020</p>
+            <p>Director: Avinash Arun; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 9</p>
+            <p>Paatal Lok is the story of how a down-on-his-luck cop called Hathiram Chaudhary (Jaideep Alhawat) bags the case of investigating four
+               people including one Vishal Tyagi (Abhishek Banerjee), accused of conspiracy to murder a well-known journalist named Sanjeev Mehra (Neeraj Kabi).
+               However, when the Hathiram does follow the trail, he realises that nothing is as it seems and there are bigger powers at play here. </p>
+               <a href="https://www.youtube.com/watch?v=cNwWMW4mxO8" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/mih.jpg" alt="Made in Heaven" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Made in Heaven</h1>
+            <p>First Episode Date: 8 March 2019</p>
+            <p>Director: Nitya Mehra; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 9</p>
+            <p>The Dark Story of India's Elite, One Wedding at a Time. Set in Delhi, spread across nine episodes, Made in Heaven revolves around
+              Tara (Sobhita Dhulipala) and Karan (Arjun Mathur), and their eponymous wedding planning company, targeting the city's uber-rich.</p>
+              <a href="https://www.youtube.com/watch?v=u0UkDQaR5KQ" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/special.jpg" alt="Special Ops" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Special Ops</h1>
+            <p>First Episode Date: 17 March 2020</p>
+            <p>Director: Neeraj Pandey; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 8</p>
+            <p>The series follows Himmat Singh of Research and Analysis Wing who draws similar patterns in terrorist attacks and is convinced a single person
+              is behind all the attacks. His task force team of five agents living in various parts of the world aim to catch the mastermind.</p>
+              <a href="https://www.youtube.com/watch?v=GF0H5DZAE2g" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/panchayat.jpg" alt="Panchayat" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Panchayat</h1>
+            <p>First Episode Date: 3 April 2020</p>
+            <p>Director: Deepak Kumar Mishra; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 8</p>
+            <p>The Series chronicles the life of engineering graduate who joins as a Panchayat secretary in a remote village Phulera of Uttar
+              Pradesh due to lack of better job options.</p>
+              <a href="https://www.youtube.com/watch?v=mojZJ7oeD_g" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/kota.jpg" alt="Kota Factory" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Kota Factory</h1>
+            <p>First Episode Date: 16 April 2019</p>
+            <p>Director: Raghav Subbu; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 5</p>
+            <p>Kota Factory revolves around the life of Vaibhav (Mayur More) a 16-year-old student who moves to Kota with hopes of clearing JEE and
+              getting into an IIT. The show follows his journey as he learns to cope and compete under pressure with the help of his friends, teacher
+               and Unacademy.</p>
+               <a href="https://www.youtube.com/watch?v=pNZQ6msbOvM" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+          </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/mirzapur.jpg" alt="Mirzapur" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Mirzapur</h1>
+            <p>First Episode Date: 16 November 2018</p>
+            <p>Director: Karan Anshuman; Language: Hindi</p>
+            <p>No.of Seasons: 2; No. of Episodes: 19</p>
+            <p>Mirzapur tells the story of two brothers Guddu (played by Ali Fazal) and Bablu (Vikrant Massey), who get caught up in a world of drugs,
+              guns and violence after they befriend Munna (Divyendu Sharma), the son of Mafia boss Akhandanand Tripathi (Pankaj Tripathi).</p>
+              <a href="https://www.youtube.com/watch?v=ZNeGF-PvRHY" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/inside.jpeg" alt="Inside Edge" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Inside Edge</h1>
+            <p>First Episode Date: 10 July 2017</p>
+            <p>Director: Karan Anshuman; Language: Hindi</p>
+            <p>No.of Seasons: 2; No. of Episodes: 20</p>
+            <p>Inside Edge is the story of the Mumbai Mavericks, a T20 cricket franchise playing in the Powerplay League. With enough twists and turns to
+              cause whiplash, Inside Edge is your window into the world of the powerful men and women who run the game behind the game, who will stop at
+              nothing to get what they want.</p>
+              <a href="https://www.youtube.com/watch?v=T1y3aIfZXJ8" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/sacred.jpg" alt="Sacred Games" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Sacred Games</h1>
+            <p>First Episode Date: 28 June 2018</p>
+            <p>Director: Anurag Kashyap; Language: Hindi</p>
+            <p>No.of Seasons: 2; No. of Episodes: 16</p>
+            <p>Sartaj Singh (Saif Ali Khan) is a troubled police officer in Mumbai who receives a phone call from gangster Ganesh Gaitonde
+              (Nawazuddin Siddiqui), who tells him to save the city within 25 days. The series chronicles the events that follow.</p>
+              <a href="https://www.youtube.com/watch?v=RWpuZXhCEkQ&t=2s" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/family.jpg" alt="The Family Man" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>The Family Man</h1>
+            <p>First Episode Date: 20 September 2019</p>
+            <p>Director: Raj & D.K. ; Language: Hindi</p>
+            <p>No.of Seasons: 1; No. of Episodes: 10</p>
+            <p>The story, revolving around the personal life of a secret agent, Srikant (Manoj Bajpai), plays out with lyrical mundaneness. Employed at an
+              intelligence agency in Mumbai, Threat Analysis and Surveillance Cell (TASC), Srikant's regular day at work involves sleuthing and shooting,
+              interrogating and nabbing terrorists.</p>
+              <a href="https://www.youtube.com/watch?v=XatRGut65VI" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+        <div class="row mov-details">
+          <div class="col-md-3 col-sm-12">
+            <img src="images/four.jpg" alt="Four More Shots Please" class="img-thumbnail">
+          </div>
+          <div class="col-md-9 col-sm-12 mov-content">
+            <h1>Four More Shots Please</h1>
+            <p>First Episode Date: 25 January 2019</p>
+            <p>Director: Anu Menon; Language: Hindi</p>
+            <p>No.of Seasons: 2; No. of Episodes: 20</p>
+            <p>The series follows the story of four unapologetically flawed women (two in their 30s and two in their early 20s) as they live,
+              love, make mistakes and discover what really makes them tick through friendship and shots of tequila in millennial Mumbai.</p>
+              <a href="https://www.youtube.com/watch?v=D7NCW8gMtVs" role="button" class="btn btn-dark" style="margin-top: 1rem">Watch Trailer</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <section id="contactus">
+    <div class="footer">
+      <h1 class="sub footer-head">Get In Touch</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 contact-icons">
+            <i class="fab fa-facebook fa-2x hvr-pop"></i>
+            <i class="fab fa-twitter fa-2x hvr-pop"></i>
+            <i class="fab fa-github fa-2x hvr-pop"></i>
+            <i class="fab fa-google-plus fa-2x hvr-pop"></i>
+            <i class="fab fa-instagram fa-2x hvr-pop"></i>
+          </div>
+        </div>
+
+      </div>
+      <p class="Copyright">©Copyright <a href="/">Zerfinite 2020</a>. All Rights reserved.</p>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+
+  function onclickHMovies(){
+
+    $("#loading-line").hide();
+
+    if($("#hmovie-area").css("display") == "none"){
+      $("#hmovie-area").fadeIn();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    } else{
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    }
+
+  }
+
+  function onclickBMovies(){
+
+    $("#loading-line").hide();
+
+    if($("#bmovie-area").css("display") == "none"){
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeIn();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    } else{
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    }
+
+  }
+
+  function onclickHWebSeries(){
+
+    $("#loading-line").hide();
+
+    if($("#hws-area").css("display") == "none"){
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeIn();
+      $("#bws-area").fadeOut();
+    } else{
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    }
+
+  }
+
+  function onclickBWebSeries(){
+
+    $("#loading-line").hide();
+
+    if($("#bws-area").css("display") == "none"){
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeIn();
+    } else{
+      $("#hmovie-area").fadeOut();
+      $("#bmovie-area").fadeOut();
+      $("#hws-area").fadeOut();
+      $("#bws-area").fadeOut();
+    }
+
+  }
+  </script>
+
+
+  </body>
+
+  </html>

@@ -1,0 +1,70 @@
+.mainHeading{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Acme';
+}
+.navbar.scrolled {
+    background: white;
+    transition: background  1000ms;
+ }
+ .jumbotron{
+   background-image: url('../images/highBack.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 13rem 5rem;
+   color: white;
+ }
+ .heading{
+   text-align: center;
+   font-family: 'Acme';
+ }
+ body{
+   font-family: 'Poppins';
+ }
+.highImage{
+  width: auto;
+}
+.footer{
+    background-color: black;
+    color:white;
+    padding: 3rem 5rem;
+}
+.footer-head{
+    text-align: center;
+}
+.footer .container{
+    margin-top: 4rem;
+}
+
+.fab {
+  margin: 4rem 1rem 3.25rem 2rem;
+}
+
+.fa-facebook:hover{
+    color: #4267B2 ;
+}
+.fa-twitter:hover{
+    color:  #1DA1F2;
+}
+.fa-github:hover{
+    color: grey;
+}
+.fa-google-plus:hover{
+    color: #DB4437;
+}
+.fa-instagram:hover{
+    color: #9b6954;
+}
+.Copyright{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.Copyright a{
+    color: white;
+}
+.Copyright a:hover{
+    color: grey;
+}
